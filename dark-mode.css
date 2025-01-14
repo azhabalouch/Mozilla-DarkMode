@@ -1,3 +1,4 @@
 .dark-mode {
-    filter: invert(1) hue-rotate(180deg) !important;
+    /* filter: invert(1) hue-rotate(180deg) !important; */
+    filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9) !important;
 }
