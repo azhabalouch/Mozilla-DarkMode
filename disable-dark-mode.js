@@ -1,7 +1,2 @@
-function removeDarkMode() {
-    document.documentElement.classList.remove('dark-mode');
-  }
-  
-  // Remove dark mode
-  removeDarkMode();
-  
+// Remove the dark mode class from the root element
+document.documentElement.classList.remove("dark-mode");

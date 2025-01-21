@@ -1,11 +1,8 @@
-function applyDarkMode() {
-    document.documentElement.classList.add('dark-mode');
-  }
-  
-  // Apply dark mode initially
-  applyDarkMode();
-  
-  // Watch for new elements and apply dark mode
-  const observer = new MutationObserver(() => applyDarkMode());
-  observer.observe(document.body, { childList: true, subtree: true });
-  
+// Add the dark mode class to the root element
+document.documentElement.classList.add("dark-mode");
+
+// Optionally observe changes and apply dark mode to new elements
+const observer = new MutationObserver(() => {
+  document.documentElement.classList.add("dark-mode");
+});
+observer.observe(document.body, { childList: true, subtree: true });
